@@ -41,4 +41,6 @@
 <script>
 	new WOW().init();
 </script>
+<script src="{{ asset('assets/datatable/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('assets/datatable/datatable/datatables/datatable.custom.js') }}"></script>
 @endif

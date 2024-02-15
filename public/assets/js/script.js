@@ -382,3 +382,8 @@ $("#flip-btn").click(function(){
 $("#flip-back").click(function(){
     $(".flip-card-inner").removeClass("flipped")
 })
+new DataTable('#example', {
+    paging: false,
+    scrollCollapse: true,
+    scrollY: '50vh'
+});

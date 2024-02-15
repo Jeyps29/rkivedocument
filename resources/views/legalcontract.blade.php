@@ -11,43 +11,79 @@
 @endsection
 
 @section('breadcrumb-title')
-<table class="display" id="basic-2">
-<thead>
-  <tr>
-    <th>Name</th>
-    <th>Position</th>
-    <th>Office</th>
-    <th>Age</th>
-    <th>Start date</th>
-    <th>Salary</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Tiger Nixon</td>
-    <td>System Architect</td>
-    <td>Edinburgh</td>
-    <td>61</td>
-    <td>2011/04/25</td>
-    <td>$320,800</td>
-  </tr>
-  <tr>
-    <td>Garrett Winters</td>
-    <td>Accountant</td>
-    <td>Tokyo</td>
-    <td>63</td>
-    <td>2011/07/25</td>
-    <td>$170,750</td>
-  </tr>
-</tbody>
-</table>
-    <script type="text/javascript">
-        var session_layout = '{{ session()->get('layout') }}';
-    </script>
-    <script src="{{ asset('assets/datatable/datatables/jquery.dataTables.min.js') }}"></script>
-<script src="{{ asset('assets/datatable/datatable/datatables/datatable.custom.js') }}"></script>
+    <h3>Contract</h3>
+@endsection
+
+@section('breadcrumb-items')
+    <li class="breadcrumb-item">Dashboard</li>
+    <li class="breadcrumb-item active">Default</li>
+@endsection
+
+@section('content')
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.css">  
+<link rel="stylesheet" href="style.css">
+
+<div class="container">
+        <h>Contracts</h>
+        <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Sub Modules</th>
+                <th>Date</th>
+                <th>Files</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jeyp </td>
+                <td>User</td>
+                <td>Calendar</td>
+                <td>2024-02-14</td>
+                <td>Sample</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+            <td>Nyaps</td>
+                <td>User</td>
+                <td>Calendar</td>
+                <td>2024-02-16</td>
+                <td>Sample</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+            <td>Jhonnell</td>
+                <td>User</td>
+                <td>Calendar</td>
+                <td>2024-02-18</td>
+                <td>Sample</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+            <td>Lion</td>
+                <td>User</td>
+                <td>Calendar</td>
+                <td>2024-02-19</td>
+                <td>Sample</td>
+                <td>Pending</td>
+            </tr>
+            
+        </tfoot>
+    </table>
+
+    </div>
+
+
+
+    <script src="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.css"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+
 
 @endsection
+
 
 @section('script')
 @endsection
